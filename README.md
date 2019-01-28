@@ -264,11 +264,24 @@ If you'd like to build images yourself (with some changes in the code, for examp
 - http://localhost:9000/hystrix - Hystrix Dashboard (Turbine stream link: `http://turbine-stream-service:8080/turbine/turbine.stream`)
 - http://localhost:15672 - RabbitMq management (default login/password: guest/guest)
 
+
 #### Notes
 All Spring Boot applications require already running [Config Server](https://github.com/sqshq/PiggyMetrics#config-service) for startup. But we can start all containers simultaneously because of `depends_on` docker-compose option.
 
 Also, Service Discovery mechanism needs some time after all applications startup. Any service is not available for discovery by clients until the instance, the Eureka server and the client all have the same metadata in their local cache, so it could take 3 heartbeats. Default heartbeat period is 30 seconds.
 
-## Contributions welcome!
+## Quick Run
 
-PiggyMetrics is open source, and would greatly appreciate your help. Feel free to suggest and implement improvements.
+Run the following commands
+
+```
+export CONFIG_SERVICE_PASSWORD="chaks" && \
+export NOTIFICATION_SERVICE_PASSWORD="chaks" && \
+export STATISTICS_SERVICE_PASSWORD="chaks" && \
+export ACCOUNT_SERVICE_PASSWORD="chaks" && \
+export MONGODB_PASSWORD="chaks"
+```
+
+then build the project: `mvn package -DskipTests`
+
+finally, run docker compose: `docker-compose up`
