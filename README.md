@@ -2,6 +2,7 @@
 [![codecov.io](https://codecov.io/github/sqshq/PiggyMetrics/coverage.svg?branch=master)](https://codecov.io/github/sqshq/PiggyMetrics?branch=master)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/sqshq/PiggyMetrics/blob/master/LICENCE)
 [![Join the chat at https://gitter.im/sqshq/PiggyMetrics](https://badges.gitter.im/sqshq/PiggyMetrics.svg)](https://gitter.im/sqshq/PiggyMetrics?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbajo1207%2Fpiggymetrics.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbajo1207%2Fpiggymetrics?ref=badge_shield)
 
 # Piggy Metrics
 
@@ -285,3 +286,7 @@ export MONGODB_PASSWORD="chaks"
 then build the project: `mvn package -DskipTests`
 
 finally, run docker compose: `docker-compose up`
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbajo1207%2Fpiggymetrics.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbajo1207%2Fpiggymetrics?ref=badge_large)
